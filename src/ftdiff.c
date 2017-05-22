@@ -1552,7 +1552,7 @@
 
         if ( text != NULL )
         {
-          fread( text, (unsigned int)tsize, 1, tfile );
+          if( fread( text, (unsigned int)tsize, 1, tfile ) ){ };
           text[tsize] = 0;
         }
         else
